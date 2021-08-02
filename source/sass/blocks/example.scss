@@ -1,0 +1,71 @@
+.example {
+  background-color: $basic-beige;
+}
+
+.example__wrapper {
+  margin: 0 30px;
+}
+
+.example__title {
+  font-family: oswaldregular;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.example__description {
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.example__form {
+  border: none;
+}
+
+.example__form-legend {
+  font-family: oswaldregular;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.example__item {
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+}
+
+.range-controls {
+  font-family: oswaldregular;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.scale {
+  border: 1px solid $basic-dark-grey;
+  width: 84px;
+  height: 14px;
+  border-radius: 10px;
+  background-color: $basic-white;
+}
+
+.bar {
+  font-family: oswaldregular;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid $basic-green;
+  width: 35px;
+  height: 6px;
+  border-radius: 10px;
+  background-color: $basic-green;
+
+}

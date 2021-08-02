@@ -1,0 +1,94 @@
+.form {
+  font-family: oswaldregular;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $basick-extra-dark-grey;
+}
+
+.form__wrapper {
+  margin: 0 30px;
+}
+
+.form__title {
+  font-family: oswaldregular;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: none;
+  color: $basic-black;
+}
+
+.form__description {
+  font-family: oswaldregular;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $basic-black;
+}
+
+.form__container {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container-form__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container-form__item {
+  margin: 6px 0;
+}
+
+.container-form__title {
+  text-transform: none;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+  color: $basic-black;
+}
+
+.form-data__input {
+  box-sizing: border-box;
+  border: 1px solid $basic-light-grey;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.container-form__comment {
+  width: 280px;
+  height: 130px;
+  border: 1px solid $basic-light-grey;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.checkbox__label {
+  color: $basic-black;
+}
+
+.container-form__button {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid $basic-green;
+  padding: 8px 74px;
+  background-color: $basic-green;
+  text-decoration: none;
+  color: white;
+}
+
+.container-form__note {
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: none;
+  text-align: center;
+  color: $basic-black;
+}
