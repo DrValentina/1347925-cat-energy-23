@@ -1,0 +1,24 @@
+.more-products {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.more-products__description {
+  font-family: $arial;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: none;
+}
+
+.more-products__link {
+  border: 1px solid $basic-grey;
+  padding: 8px 100px;
+  background-color: $basic-grey;
+  text-decoration: none;
+  color: $basick-extra-dark-grey;
+}

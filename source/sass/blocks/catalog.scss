@@ -1,16 +1,9 @@
-.catalog {
-  font-family: "Arial";
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-}
-
 .catalog__wrapper {
   margin: 0 30px;
 }
 
 .catalog__title {
-  font-family: oswaldregular;
+  font-family: $oswald;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
@@ -20,88 +13,4 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-
-.product__title {
-  font-family: oswaldregular;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-}
-
-.product__button {
-  font-family: oswaldregular;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  border: 1px solid $basic-green;
-  padding: 8px 100px;
-  background-color: $basic-green;
-  text-decoration: none;
-  color: white;
-}
-
-.more-products__title {
-  font-family: oswaldregular;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.more-products__description {
-  text-align: center;
-}
-
-.more-products__link {
-  font-family: oswaldregular;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  border: 1px solid $basic-grey;
-  padding: 8px 100px;
-  background-color: $basic-grey;
-  text-decoration: none;
-  color: $basick-extra-dark-grey;
-}
-
-.add-products__title {
-  font-family: oswaldregular;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-}
-
-.add-products__list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.add-product__title {
-  font-family: oswaldregular;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 16px;
-  text-transform: uppercase;
-}
-
-.add-product__button {
-  font-family: oswaldregular;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  border: 1px solid $basic-green;
-  padding: 8px 100px;
-  background-color: $basic-green;
-  text-decoration: none;
-  color: white;
 }

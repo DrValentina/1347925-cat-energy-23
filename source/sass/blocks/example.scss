@@ -7,14 +7,14 @@
 }
 
 .example__title {
-  font-family: oswaldregular;
+  font-family: $oswald;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
 }
 
 .example__description {
-  font-family: "Arial";
+  font-family: $arial;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -25,7 +25,7 @@
 }
 
 .example__form-legend {
-  font-family: oswaldregular;
+  font-family: $oswald;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -33,7 +33,7 @@
 }
 
 .example__item {
-  font-family: "Arial";
+  font-family: $arial;
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
@@ -41,7 +41,7 @@
 }
 
 .range-controls {
-  font-family: oswaldregular;
+  font-family: $oswald;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -57,7 +57,6 @@
 }
 
 .bar {
-  font-family: oswaldregular;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;

@@ -3,7 +3,7 @@
 }
 
 .working__title {
-  font-family: oswaldregular;
+  font-family: $oswald;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
@@ -23,7 +23,7 @@
 }
 
 .working__description {
-  font-family: "Arial";
+  font-family: $arial;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;

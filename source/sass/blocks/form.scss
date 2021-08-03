@@ -1,5 +1,5 @@
 .form {
-  font-family: oswaldregular;
+  font-family: $oswald;
   font-weight: 400;
   text-transform: uppercase;
   color: $basick-extra-dark-grey;
@@ -10,7 +10,6 @@
 }
 
 .form__title {
-  font-family: oswaldregular;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
@@ -19,7 +18,6 @@
 }
 
 .form__description {
-  font-family: oswaldregular;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -45,6 +43,7 @@
 
 .container-form__title {
   text-transform: none;
+  font-weight: 400;
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
@@ -84,7 +83,7 @@
 }
 
 .container-form__note {
-  font-family: "Arial";
+  font-family: $arial;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;

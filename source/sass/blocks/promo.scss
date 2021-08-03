@@ -1,9 +1,10 @@
 .promo {
-  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/JPEG/index-background-desktop.jpg);
+  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/jpeg/index-background-desktop.jpg);
   background-repeat: no-repeat;
   background-size: 320px 302px;
   background-position: top;
-  font-family: oswaldregular;
+  font-family: $oswald;
+  font-weight: 400;
   color: white;
 }
 
@@ -12,7 +13,6 @@
 }
 
 .promo__title {
-  font-family: oswaldregular;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;

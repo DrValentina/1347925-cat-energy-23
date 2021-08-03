@@ -4,7 +4,7 @@
 @import "global/normalize.scss";
 @import "global/fonts.scss";
 @import "global/global.scss";
-@import "global/colors.scss";
+@import "global/variables.scss";
 
 // Blocks
 
@@ -25,3 +25,6 @@
 //Catalog page__body
 @import "blocks/catalog.scss";
 @import "blocks/gift.scss";
+@import "blocks/product.scss";
+@import "blocks/more-products";
+@import "blocks/add-products";
