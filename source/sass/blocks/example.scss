@@ -39,32 +39,3 @@
   line-height: 12px;
   text-align: center;
 }
-
-.range-controls {
-  font-family: $oswald;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-}
-
-.scale {
-  border: 1px solid $basic-dark-grey;
-  width: 84px;
-  height: 14px;
-  border-radius: 10px;
-  background-color: $basic-white;
-}
-
-.bar {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  border: 1px solid $basic-green;
-  width: 35px;
-  height: 6px;
-  border-radius: 10px;
-  background-color: $basic-green;
-
-}
