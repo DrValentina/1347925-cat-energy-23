@@ -1,0 +1,41 @@
+.example {
+  background-color: $basic-beige;
+}
+
+.example__wrapper {
+  margin: 0 30px;
+}
+
+.example__title {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.example__description {
+  font-family: $arial;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.example__form {
+  border: none;
+}
+
+.example__form-legend {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.example__item {
+  font-family: $arial;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+}

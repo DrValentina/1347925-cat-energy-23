@@ -1,0 +1,30 @@
+.working__wrapper {
+  margin: 0 30px;
+}
+
+.working__title {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.working__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.working__img {
+  background-color: $basic-green;
+  width: 30px;
+  height: 30px;
+  padding: 15px;
+}
+
+.working__description {
+  font-family: $arial;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}

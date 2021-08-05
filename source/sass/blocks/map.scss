@@ -1,0 +1,21 @@
+.map {
+  background-color: $basic-grey;
+}
+
+.map__header {
+  margin: 0 30px;
+}
+
+.map__description {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.map__address {
+  font-family: $arial;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}

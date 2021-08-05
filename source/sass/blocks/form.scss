@@ -1,0 +1,32 @@
+.form {
+  font-family: $oswald;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $basick-extra-dark-grey;
+}
+
+.form__wrapper {
+  margin: 0 30px;
+}
+
+.form__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: none;
+  color: $basic-black;
+}
+
+.form__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $basic-black;
+}
+
+.form__container {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
