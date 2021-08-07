@@ -1,5 +1,20 @@
 .main-nav__list {
+  display: flex;
+  flex-direction: column;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
 }
 
 .main-nav__item--link {
@@ -10,4 +25,8 @@
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 37px;
+  }
 }

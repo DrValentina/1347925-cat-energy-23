@@ -1,9 +1,14 @@
 .range-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: $oswald;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
+  margin: 0 20px;
+  padding: 0;
 }
 
 .range-controls__scale {
@@ -12,6 +17,8 @@
   height: 14px;
   border-radius: 10px;
   background-color: $basic-white;
+  margin: 0;
+  padding: 0;
 }
 
 .range-controls__bar {
@@ -24,4 +31,11 @@
   height: 6px;
   border-radius: 10px;
   background-color: $basic-green;
+  margin: 3px 3px;
+  padding: 0;
+}
+
+.range-controls__description {
+  text-transform: uppercase;
+  margin: 0 20px
 }

@@ -1,5 +1,21 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
 .copyright__link {
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 22px;
+  }
+
 }
 
 .copyright__name {
