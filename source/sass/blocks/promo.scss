@@ -5,18 +5,50 @@
   background-position: top;
   font-family: $oswald;
   font-weight: 400;
-  color: white;
+  color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    background: transparent;
+    color: $basic-black;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/jpeg/index-background-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: 720px 694px;
+    background-position: 100% 0%;
+  }
 }
 
 .promo__wrapper {
-  margin: 0 30px;
+  margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 110px;
+  }
 }
 
 .promo__title {
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  text-align: center;
+  margin: 0 auto;
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-left: 83px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    margin-left: 80px;
+  }
 }
 
 .promo__slogan {
@@ -25,21 +57,47 @@
   line-height: 14px;
   text-align: center;
   text-transform: uppercase;
+  margin: 25px auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 83px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    margin-left: 80px;
+  }
 }
 
 .promo__image {
   text-align: center;
+  padding-top: 4px;
 }
 
 .promo__button {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  text-align: center;
   text-transform: uppercase;
   border: 1px solid $basic-green;
-  padding: 8px 44px;
+  padding: 8px 72px;
   background-color: $basic-green;
   text-decoration: none;
   color: white;
+  text-align: center;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 14px 26px;
+    margin-left: 83px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    margin-left: 80px;
+  }
 }
