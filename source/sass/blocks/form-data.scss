@@ -3,4 +3,10 @@
   border: 1px solid $basic-light-grey;
   text-transform: uppercase;
   padding: 10px;
+  margin: 0;
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
