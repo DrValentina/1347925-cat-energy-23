@@ -15,6 +15,13 @@
   line-height: 26px;
   font-weight: 400;
   color: $basic-black;
+  margin: 22px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 57px 0;
+  }
 }
 
 .container-form__comment {
@@ -23,6 +30,17 @@
   border: 1px solid $basic-light-grey;
   text-transform: uppercase;
   padding: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 95%;
+  }
+}
+
+.container-form__finish {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .container-form__button {
@@ -36,6 +54,18 @@
   background-color: $basic-green;
   text-decoration: none;
   color: white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 0;
+    padding: 14px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 0;
+    padding: 13px 188px;
+  }
 }
 
 .container-form__note {

@@ -23,6 +23,18 @@
   }
 }
 
+.map__header--form {
+  background-color: $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-white;
+  }
+}
+
 .map__description {
   font-family: $oswald;
   font-weight: 400;

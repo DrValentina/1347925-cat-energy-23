@@ -70,44 +70,46 @@
           <p class="form__description">Заполните анкету, и мы подберём программу для Вашего кота</p>
           <fieldset class="form__container container-form">
             <h2 class="visually-hidden">Данные кота</h2>
-            <ul class="container-form__list">
-              <li class="container-form__item">
-                <label class="container-form__label form-data">Имя:*
-                  <input class="form-data__input" type="text" name="name-cat" placeholder="Барсик">
-                </label>
-              </li>
-              <li class="container-form__item">
-                <label class="container-form__label form-data">Вес (кг):*
-                  <input class="form-data__input" type="text" name="weight-cat" placeholder="7">
-                </label>
-              </li>
-              <li class="container-form__item">
-                <label class="container-form__label form-data">Возраст (лет):
-                  <input class="form-data__input" type="text" name="age-cat" placeholder="7">
-                </label>
-              </li>
-            </ul>
-            <ul class="container-form__list">
-              <li class="container-form__item">
-                <div class="radio">
-                  <input class="radio__input" type="radio" name="slim" checked>
-                  <label class="radio__label">Похудение</label>
-                </div>
-              </li>
-              <li class="container-form__item">
-                <div class="radio">
-                  <input class="radio__input" type="radio" name="weight-gain" >
-                  <label class="radio__label">Набор массы</label>
-                </div>
-              </li>
-              <li class="container-form__item">
-                <div class="radio">
-                  <input class="radio__input" type="radio" name="advice">
-                  <label class="radio__label">Не знаю (нужен ваш совет)</label>
-                </div>
-              </li>
-            </ul>
-            <h2 class="container-form__title">Контактные данные (владельца кота)</h2>
+            <div class="container-form__header">
+              <ul class="container-form__list">
+                <li class="container-form__item">
+                  <label class="container-form__label form-data">Имя:*
+                    <input class="form-data__input" type="text" name="name-cat" placeholder="Барсик">
+                  </label>
+                </li>
+                <li class="container-form__item">
+                  <label class="container-form__label form-data">Вес (кг):*
+                    <input class="form-data__input" type="text" name="weight-cat" placeholder="7">
+                  </label>
+                </li>
+                <li class="container-form__item">
+                  <label class="container-form__label form-data">Возраст (лет):
+                    <input class="form-data__input" type="text" name="age-cat" placeholder="7">
+                  </label>
+                </li>
+              </ul>
+              <ul class="container-form__list">
+                <li class="container-form__item">
+                  <div class="radio">
+                    <input class="radio__input" type="radio" name="slim" checked>
+                    <label class="radio__label">Похудение</label>
+                  </div>
+                </li>
+                <li class="container-form__item">
+                  <div class="radio">
+                    <input class="radio__input" type="radio" name="weight-gain" >
+                    <label class="radio__label">Набор массы</label>
+                  </div>
+                </li>
+                <li class="container-form__item">
+                  <div class="radio">
+                    <input class="radio__input" type="radio" name="advice">
+                    <label class="radio__label">Не знаю (нужен ваш совет)</label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+             <h2 class="container-form__title">Контактные данные (владельца кота)</h2>
               <ul class="container-form__list">
                 <li class="container-form__item">
                   <label class="container-form__label form-data">E-MAIL:*
@@ -123,7 +125,7 @@
             <h2 class="container-form__title">Комментарии</h2>
             <input class="container-form__comment" type="text" name="comment" placeholder="Расскажи обо всех повадках кота">
             <h2 class="container-form__title">Дополнительно</h2>
-            <ul class="container-form__list">
+            <ul class="container-form__list checkbox__list">
               <li class="container-form__item">
                 <div class="checkbox">
                   <input class="checkbox__input" type="checkbox" name="checkbox" checked>
@@ -146,14 +148,16 @@
                   <label class="checkbox__label" for="">Витамины</label>
               </li>
             </ul>
-            <button class="container-form__button" type="submit" name="button">Отправь заявку</button>
+            <div class="container-form__finish">
+              <button class="container-form__button" type="submit" name="button">Отправь заявку</button>
+              <p class="container-form__note">*- Обязательные поля</p>
+            </div>
           </fieldset>
-          <p class="container-form__note">*- Обязательные поля</p>
         </div>
       </section>
 
       <section class="map">
-        <header class="map__header">
+        <header class="map__header map__header--form">
           <p class="map__description">Приглашаем к сотрудничеству дилеров!</p>
           <p class="map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </header>
