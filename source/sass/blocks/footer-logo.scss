@@ -1,3 +1,7 @@
 .logo {
-  margin: 16px 0;
+  margin: 16px auto;
+
+  @media (min-width: $tablet-width) {
+    margin: auto 0;
+  }
 }

@@ -5,12 +5,12 @@
 
 .map__header {
   display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 26px 20px;
   background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
-    justify-content: space-between;
     padding: 26px 71px;
   }
 
@@ -18,7 +18,7 @@
     position: absolute;
     bottom: 25%;
     left: 110px;
-    width: 570px;
+    width: 420px;
     padding: 51px 76px;
   }
 }
@@ -50,17 +50,35 @@
 }
 
 .map__address {
+  display: flex;
+  flex-direction: column;
   font-family: $arial;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  margin: auto 0;
+  margin: 16px 0;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     width: 159px;
     font-size: 16px;
     line-height: 20px;
+    text-align: right;
   }
+}
+
+.map__address-street {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.map__address-city {
+  margin: 0;
+  padding: 0;
 }
 
 .map__image {

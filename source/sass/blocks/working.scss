@@ -4,6 +4,14 @@
 
 .working__wrapper {
   margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 110px;
+  }
 }
 
 .working__title {
@@ -41,14 +49,20 @@
 }
 
 .working__item {
+  position: relative;
   display: flex;
   justify-content: space-between;
   margin: 0;
   padding: 0;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 280px;
   }
 }
 
@@ -76,5 +90,73 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     padding: 0;
+  }
+}
+
+.working__item--leaf::before {
+  @media (min-width: $tablet-width) {
+    content: '1';
+    position: absolute;
+    top: 0%;
+    left: 118px;
+    width: 112px;
+    height: 250px;
+    z-index: -1;
+    font-family: $oswald;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    color: $basic-grey;
+  }
+}
+
+.working__item--tub::before {
+  @media (min-width: $tablet-width) {
+    content: '2';
+    position: absolute;
+    top: 0%;
+    left: 118px;
+    width: 112px;
+    height: 250px;
+    z-index: -1;
+    font-family: $oswald;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    color: $basic-grey;
+  }
+}
+
+.working__item--eat::before {
+  @media (min-width: $tablet-width) {
+    content: '3';
+    position: absolute;
+    top: 0%;
+    left: 118px;
+    width: 112px;
+    height: 250px;
+    z-index: -1;
+    font-family: $oswald;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    color: $basic-grey;
+  }
+}
+
+.working__item--alarm::before {
+  @media (min-width: $tablet-width) {
+    content: '4';
+    position: absolute;
+    top: 0%;
+    left: 118px;
+    width: 112px;
+    height: 250px;
+    z-index: -1;
+    font-family: $oswald;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    color: $basic-grey;
   }
 }

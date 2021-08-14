@@ -1,22 +1,22 @@
 .programms {
-  margin: 22px auto;
+  margin: 0 auto;
 }
 
 .programms__wrapper {
-  margin: 0 20px;
+  margin: 22px 20px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 30px;
+    margin: 45px 30px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 110px;
+    margin: 71px 110px;
   }
 }
 
 .programms__list {
   display: grid;
-  grid-template-rows: 266px 266px;
+  grid-template-rows: 1fr 1fr;
   grid-row-gap: 20px;
 
   @media (min-width: $tablet-width) {
@@ -46,6 +46,16 @@
   background-size: 50px 53px;
   background-repeat: no-repeat;
   background-position: 22px 21px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 200px 211px;
+    background-position: 476px 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 100px 106px;
+    background-position: 52px 41px;
+  }
 }
 
 .programms__weight-gain {
@@ -53,6 +63,16 @@
   background-size: 67px 50px;
   background-repeat: no-repeat;
   background-position: 13px 24px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 268px 200px;
+    background-position: 442px 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 134px 100px;
+    background-position: 33px 47px;
+  }
 }
 
 .programms__title {
@@ -70,6 +90,11 @@
     padding: 0;
     margin: 24px 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 162px;
+    margin-bottom: 73px;
+  }
 }
 
 .programms__text {
@@ -85,6 +110,13 @@
     font-size: 16px;
     line-height: 24px;
     border: none;
+    width: 340px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin: 0;
   }
 }
 

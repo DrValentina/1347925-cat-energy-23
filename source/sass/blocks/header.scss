@@ -1,12 +1,13 @@
 .page-header {
-  display: grid;
-  grid-template-columns: 3fr 2fr;
+  display: flex;
+  flex-direction: column;
   margin: 10px 20px;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 4fr;
     margin: 24px 30px;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -18,12 +19,22 @@
 
 .page-header__logo {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+}
 
-  @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+.page-header__logo--logotype {
+  margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 12px;
+  }
+}
+
+.page-header__logo--name {
+  margin: 0 25px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
   }
 }

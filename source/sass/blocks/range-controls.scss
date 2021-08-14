@@ -1,4 +1,5 @@
 .range-controls {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,6 +10,18 @@
   text-align: center;
   margin: 0 20px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 170%;
+    left: 53%;
+
+  }
 }
 
 .range-controls__scale {
@@ -19,6 +32,39 @@
   background-color: $basic-white;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 428px;
+    height: 6px;
+    background-color: $basic-dark-grey;
+  }
+}
+
+.range-controls__toggle {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    border: 1px solid $basic-white;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: $basic-white;
+    box-shadow: (0px 1px 3px $basic-dark-grey);
+    left: 47%;
+  }
+}
+
+.range-controls__toggle::after {
+  @media (min-width: $tablet-width) {
+    content: '';
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    border: 1px solid $basic-green;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $basic-green;
+  }
 }
 
 .range-controls__bar {
@@ -33,9 +79,17 @@
   background-color: $basic-green;
   margin: 3px 3px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .range-controls__description {
   text-transform: uppercase;
-  margin: 0 20px
+  margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $basic-dark-grey;
+  }
 }

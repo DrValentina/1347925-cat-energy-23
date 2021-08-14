@@ -1,11 +1,29 @@
 .example {
+  position: relative;
   background-color: $basic-beige;
   margin: 0;
   padding: 25px 0;
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(to bottom, $basic-white 60%, $basic-beige 40%);
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(to top, $basic-grey 70%, $basic-white 30%);
+    height: 570px;
+  }
 }
 
 .example__wrapper {
   margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 110px;
+  }
 }
 
 .example__title {
@@ -15,7 +33,18 @@
   line-height: 40px;
   margin: 0;
   padding: 0;
-  padding-bottom: 33px;
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-white;
+    margin-bottom: 146px;
+  }
 }
 
 .example__description {
@@ -26,46 +55,163 @@
   margin: 0;
   padding: 0;
   margin-bottom: 25px;
-}
-
-.example__form {
-  border: none;
-  margin: 0;
-  padding: 0;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    vertical-align: middle;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+    margin-bottom: 64px;
   }
 }
 
+.example__form {
+  position: relative;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
 .example__form-legend {
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  display: flex;
   font-family: $oswald;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  text-transform: uppercase;
   text-align: center;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    font-size: 20px;
+    line-height: 20px;
+    top: 0%;
+    left: 72%;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: flex-start;
+    left: 0%;
+    top: 180%;
+  }
+}
+
+.example__form-legend--text {
+  margin: 0;
+  padding: 0 2px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 63px;
+  }
 }
 
 .example__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .example__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-right: 31px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 42px;
+  }
+}
+
+.example-item__input {
+  font-family: $oswald;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  width: 82px;
+  background-color: $basic-beige;
+  padding: 14px 21px;
+  border: 2px solid $basic-dark-grey;
+  border-radius: 5px 5px;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-white;
+    font-size: 30px;
+    line-height: 37px;
+    width: 102px;
+    padding: 15px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-grey;
+  }
+}
+
+.example-item__label {
+  position: absolute;
+  top: 80%;
+  left: 18%;
+  z-index: 2;
   font-family: $arial;
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
+  width: 80px;
+  background-color: $basic-beige;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-white;
+    font-size: 14px;
+    line-height: 14px;
+    margin: 0;
+    padding: 0 10px;
+    top: 85%;
+    width: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-grey;
+  }
 }
 
-.example-item__input {
-  width: 124px;
+.example-item__label--weight {
+  @media (min-width: $tablet-width) {
+    left: 15%;
+  }
+}
+
+.example-item__label--time {
+  @media (min-width: $tablet-width) {
+    left: 6%;
+  }
 }
 
 .example__image {
   margin: 0;
+  margin-top: 90px;
+  margin-bottom: 13px;
   padding: 0;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    z-index: 2;
+    bottom: 100%;
+    left: 80%
+  }
 }
