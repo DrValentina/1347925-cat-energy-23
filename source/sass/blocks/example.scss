@@ -6,6 +6,7 @@
 
   @media (min-width: $tablet-width) {
     background-image: linear-gradient(to bottom, $basic-white 60%, $basic-beige 40%);
+    padding: 43px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -68,16 +69,9 @@
   }
 }
 
-.example__form {
-  position: relative;
-  border: none;
-  margin: 0;
-  padding: 0;
-}
-
 .example__form-legend {
   position: absolute;
-  top: 25%;
+  top: 45%;
   left: 30%;
   display: flex;
   font-family: $oswald;
@@ -93,7 +87,7 @@
     flex-direction: column;
     font-size: 20px;
     line-height: 20px;
-    top: 0%;
+    top: 38%;
     left: 72%;
     text-align: right;
   }
@@ -101,8 +95,8 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: flex-start;
-    left: 0%;
-    top: 180%;
+    left: 110px;
+    top: 80%;
   }
 }
 
@@ -135,7 +129,7 @@
   }
 }
 
-.example-item__input {
+.example-item__block {
   font-family: $oswald;
   font-size: 24px;
   line-height: 24px;
@@ -163,7 +157,7 @@
 
 .example-item__label {
   position: absolute;
-  top: 80%;
+  top: 60%;
   left: 18%;
   z-index: 2;
   font-family: $arial;
@@ -211,7 +205,7 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     z-index: 2;
-    bottom: 100%;
+    bottom: 30%;
     left: 80%
   }
 }

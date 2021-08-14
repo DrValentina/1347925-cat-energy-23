@@ -14,11 +14,12 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding-bottom: 24px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 170%;
+    top: 80%;
     left: 53%;
 
   }
@@ -88,6 +89,9 @@
 .range-controls__description {
   text-transform: uppercase;
   margin: 0 20px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
 
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid $basic-dark-grey;
