@@ -1,4 +1,5 @@
 .promo {
+  position: relative;
   background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/jpeg/index-background-desktop.jpg);
   background-repeat: no-repeat;
   background-size: 320px 302px;
@@ -6,13 +7,18 @@
   font-family: $oswald;
   font-weight: 400;
   color: $basic-white;
+  margin: 0;
+  padding: 27px 35px;
 
   @media (min-width: $tablet-width) {
     background: transparent;
     color: $basic-black;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: -150px;
+    z-index: -1;
     background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/jpeg/index-background-desktop.jpg);
     background-repeat: no-repeat;
     background-size: 720px 694px;
@@ -21,14 +27,18 @@
 }
 
 .promo__wrapper {
-  margin: 0 20px;
+  margin: 7px 20px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin: 0 30px;
+    margin: 64px 83px;
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0 110px;
+    padding-top: 200px;
+    padding-left: 80px;
   }
 }
 
@@ -36,18 +46,19 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  margin: 0 auto;
   padding-top: 27px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-left: 83px;
+    text-align: left;
+    margin-bottom: 41px;
   }
 
   @media (min-width: $desktop-width) {
-    text-align: left;
-    margin-left: 80px;
   }
 }
 
@@ -62,12 +73,10 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    margin-left: 83px;
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {
-    text-align: left;
-    margin-left: 80px;
   }
 }
 
@@ -86,18 +95,18 @@
   background-color: $basic-green;
   text-decoration: none;
   color: white;
-  text-align: center;
-  margin: 0;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 47%;
     font-size: 20px;
     line-height: 20px;
     padding: 14px 26px;
-    margin-left: 83px;
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {
-    text-align: left;
-    margin-left: 80px;
+    top: 63%;
+
   }
 }

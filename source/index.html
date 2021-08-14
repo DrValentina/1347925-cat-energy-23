@@ -51,15 +51,13 @@
           </svg>
         </a>
       </div>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button" name="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--current"><a class="main-nav__item--link" href="#">Главная</a></li>
-            <li class="main-nav__item"><a class="main-nav__item--link" href="catalog.html">Каталог продукции</a></li>
-            <li class="main-nav__item"><a class="main-nav__item--link" href="form.html">Подбор программы</a></li>
-          </ul>
-        </div>
+      <nav class="main-nav main-nav--closed">
+      <button class="main-nav__toggle main-nav--closed" type="button" name="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--current"><a class="main-nav__item--link" href="#">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__item--link" href="catalog.html">Каталог продукции</a></li>
+          <li class="main-nav__item"><a class="main-nav__item--link" href="form.html">Подбор программы</a></li>
+        </ul>
       </nav>
     </header>
 
@@ -67,7 +65,7 @@
       <h1 class="visually-hidden">Cat Energy</h1>
       <section class="promo">
         <div class="promo__wrapper">
-          <h2 class="promo__title">Функциональное питание для котов</h2>
+          <h2 class="promo__title">Функциональное <br> питание для котов</h2>
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
           <figure class="promo__image">
             <img class="promo__image-img" src="img/png/index-can-mobile1.png" alt="Корм Cat Energy Pro с курицей" width="280" height="270">
@@ -96,7 +94,7 @@
         <div class="working__wrapper">
           <h2 class="working__title">Как это работает</h2>
           <ul class="working__list">
-            <li class="working__item">
+            <li class="working__item working__item--leaf">
               <figure class="working__img">
                 <img src="img/svg/icon_leaf.svg" alt="Полезные вещества">
               </figure>
@@ -130,14 +128,19 @@
           <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
           <fieldset class="example__form">
             <div class="example__list">
-              <label class="example__item example-item">снижение веса
+              <div class="example__item example-item">
                 <input class="example-item__input" type="text" name="" value="">
-              </label>
-              <label class="example__item example-item">затрачено времени
+                <label class="example-item__label example-item__label--weight">снижение веса</label>
+              </div>
+              <div class="example__item example-item">
                 <input class="example-item__input" type="text" name="" value="">
-              </label>
+                <label class="example-item__label example-item__label--time">затрачено времени</label>
+              </div>
             </div>
-            <legend class="example__form-legend">Затраты на питание: 15 000 руб.</legend>
+            <legend class="example__form-legend">
+              <p class="example__form-legend--text">Затраты на питание: </p>
+              <p class="example__form-legend--text"> 15 000 руб.</p>
+            </legend>
             <figure class="example__image">
             <!--  <img src="img/png/before-mobile.png" alt="Кот до"> -->
               <img src="img/png/after-mobile.png" alt="Кот после">
@@ -145,9 +148,9 @@
             <div class="range-controls">
               <p class="range-controls__description">было</p>
               <div class="range-controls__scale">
-                <div class="range-controls__bar">
-                </div>
+                <div class="range-controls__bar"></div>
               </div>
+              <div class="range-controls__toggle"></div>
               <p class="range-controls__description">стало</p>
             </div>
             </div>
@@ -158,7 +161,10 @@
       <section class="map">
         <header class="map__header">
           <p class="map__description">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <div class="map__address">
+            <p class="map__address-street">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="map__address-city">Санкт-Петербург</p>
+          </div>
         </header>
         <figure class="map__image">
           <img class="map__image-img" src="img/jpeg/location.jpg" width="320" height="362" alt="Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
