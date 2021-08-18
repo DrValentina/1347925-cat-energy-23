@@ -1,24 +1,120 @@
 .more-products {
+  padding: 25px 20px;
+  padding-bottom: 45px;
+  border-top: 1px solid $line-grey;
+  border-bottom: 1px solid $line-grey;
+  text-align:center;
+
+  @media(min-width: $tablet-width) {
+    border: 1px solid $line-grey;
+    padding: 38px;
+  }
+}
+
+.more-product__plus {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+
+  @media(min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
+  }
+}
+
+.more-product__plus::before,
+.more-product__plus::after{
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  width: 30px;
+  border: 2px solid $pluse;
+  background-color: $pluse;
+
+  @media(min-width: $tablet-width) {
+    width: 60px;
+  }
+}
+
+.more-product__plus::before {
+  transform: rotate(90deg);
+}
+
+.more-product__plus::after {
+  transform: rotate(180deg);
+}
+
+.more-products__title {
   font-family: $oswald;
   font-weight: 400;
   font-size: 16px;
-  font-size: 20px;
+  line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
+  margin-top: 23px;
+  margin-bottom: 8px;
+
+  @media(min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+    margin: 60px 30px;
+  }
+
+  @media(min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 22px;
+    margin: 49px 20px;
+  }
 }
 
 .more-products__description {
+  grid-area: text;
   font-family: $arial;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 16px;
+  line-height: 20px;
   text-transform: none;
+  margin: 0;
+  margin-bottom: 45px;
+
+  @media(min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0 30px;
+    margin-bottom: 60px;
+}
+
+  @media(min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0;
+    margin-bottom: 90px;
+  }
 }
 
 .more-products__link {
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
   border: 1px solid $basic-grey;
-  padding: 8px 100px;
+  margin: 0;
+  padding: 10px 130px;
   background-color: $basic-grey;
   text-decoration: none;
   color: $basick-extra-dark-grey;
+
+  @media(min-width: $tablet-width) {
+    padding: 10px 75px;
+  }
+
+  @media(min-width: $desktop-width) {
+    padding: 10px 39px;
+  }
 }

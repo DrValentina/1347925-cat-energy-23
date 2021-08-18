@@ -1,30 +1,97 @@
 .product {
+  display: grid;
+  grid-template-areas: "img title ."
+                       "img table table"
+                       "img table table"
+                       "img table table"
+                       "button button button";
   font-family: $arial;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
+  padding: 20px 20px;
+  border-top: 1px solid $line-grey;
 
   @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-areas: "img img img"
+                         ". title ."
+                         "table table table"
+                         "button button button";
     font-size: 16px;
     line-height: 16px;
+    margin: 0;
+    padding: 39px 36px;
+    border: none;
+    background-image: linear-gradient(to top, $basic-grey 80%, $basic-white 20%);
+  }
+
+  @media(min-width: $desktop-width) {
+    padding: 39px;
   }
 }
 
 .product__title {
+  grid-area: title;
   font-family: $oswald;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: $special-extra-dark-grey;
+  width: 76px;
+  margin: 0;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
+    width: 150px;
+    margin: 0;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 140px;
   }
 }
 
+.product__image {
+  grid-area: img;
+  margin: auto 36px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    margin-bottom: 34px;
+  }
+}
+
+.product__info {
+  grid-area: table;
+  margin: 18px 0;
+  text-align: left;
+
+  @media(min-width: $tablet-width) {
+    margin: 21px 0;
+  }
+}
+
+.product__column {
+  padding-right: 74px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $line-grey;
+    padding: 7px 0;
+  }
+}
+
+.product__column:nth-child(2) {
+  padding: 0;
+  text-align: right;
+}
+
 .product__button {
+  grid-area: button;
   font-family: $oswald;
   font-weight: 400;
   font-size: 16px;
@@ -36,8 +103,17 @@
   background-color: $basic-green;
   text-decoration: none;
   color: white;
+  margin-bottom: 5px;
 
   @media (min-width: $tablet-width) {
+    margin: 12px auto;
+    margin-bottom: 0;
     padding: 10px 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 12px auto;
+    margin-bottom: 0;
+    padding: 10px 53px;
   }
 }

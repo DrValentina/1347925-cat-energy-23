@@ -1,10 +1,14 @@
 .container-form__list {
+  display: flex;
+  flex-direction: column;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
 .container-form__item {
+  display: flex;
+  align-items: center;
   margin: 6px 0;
 }
 
@@ -22,21 +26,42 @@
     line-height: 36px;
     margin: 57px 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 69px 0
+  }
+}
+
+.container-form__list-radio {
+  border-top: 1px solid $line-grey;
+  border-bottom: 1px solid $line-grey;
+  padding: 20px 0;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid $line-grey;
+    padding: 25px 28px;
+  }
 }
 
 .container-form__comment {
-  width: 280px;
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
   height: 130px;
   border: 1px solid $basic-light-grey;
   text-transform: uppercase;
   padding: 10px;
 
   @media (min-width: $tablet-width) {
-    width: 95%;
   }
 }
 
 .container-form__finish {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 32px 0;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -54,16 +79,17 @@
   background-color: $basic-green;
   text-decoration: none;
   color: white;
+  margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 0;
+    line-height: 20px;
     padding: 14px 45px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
-    line-height: 0;
+    line-height: 20px;
     padding: 13px 188px;
   }
 }
@@ -76,4 +102,8 @@
   text-transform: none;
   text-align: center;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
 }

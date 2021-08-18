@@ -52,9 +52,9 @@
         </a>
       </div>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button" name="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__toggle main-nav--closed" type="button" name="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
+          <ul class="main-nav__list main-nav--closed">
             <li class="main-nav__item main-nav__item--current"><a class="main-nav__item--link" href="index.html">Главная</a></li>
             <li class="main-nav__item"><a class="main-nav__item--link" href="catalog.html">Каталог продукции</a></li>
             <li class="main-nav__item"><a class="main-nav__item--link" href="#">Подбор программы</a></li>
@@ -67,28 +67,25 @@
       <section class="form">
         <div class="form__wrapper">
           <h1 class="form__title">Подбор программы</h1>
-          <p class="form__description">Заполните анкету, и мы подберём программу для Вашего кота</p>
+          <p class="form__description">Заполните анкету, и мы подберём <br>программу питания для Вашего кота</p>
           <fieldset class="form__container container-form">
             <h2 class="visually-hidden">Данные кота</h2>
             <div class="container-form__header">
               <ul class="container-form__list">
                 <li class="container-form__item">
-                  <label class="container-form__label form-data">Имя:*
-                    <input class="form-data__input" type="text" name="name-cat" placeholder="Барсик">
-                  </label>
+                  <label class="container-form__label form-data">Имя:*</label>
+                  <input class="form-data__input" type="text" name="name-cat" placeholder="Барсик">
                 </li>
                 <li class="container-form__item">
-                  <label class="container-form__label form-data">Вес (кг):*
-                    <input class="form-data__input" type="text" name="weight-cat" placeholder="7">
-                  </label>
+                  <label class="container-form__label form-data">Вес (кг):*</label>
+                  <input class="form-data__input" type="text" name="weight-cat" placeholder="7">
                 </li>
                 <li class="container-form__item">
-                  <label class="container-form__label form-data">Возраст (лет):
-                    <input class="form-data__input" type="text" name="age-cat" placeholder="7">
-                  </label>
+                  <label class="container-form__label form-data">Возраст (лет):</label>
+                  <input class="form-data__input" type="text" name="age-cat" placeholder="7">
                 </li>
               </ul>
-              <ul class="container-form__list">
+              <ul class="container-form__list container-form__list-radio">
                 <li class="container-form__item">
                   <div class="radio">
                     <input class="radio__input" type="radio" name="slim" checked>
@@ -110,20 +107,20 @@
               </ul>
             </div>
              <h2 class="container-form__title">Контактные данные (владельца кота)</h2>
-              <ul class="container-form__list">
+              <ul class="container-form__list--contacts">
                 <li class="container-form__item">
-                  <label class="container-form__label form-data">E-MAIL:*
-                    <input class="form-data__input" type="email" name="email" placeholder="KUKLACHEV@GMAIL.COM" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/">
-                  </label>
+                  <label class="container-form__label form-data">E-MAIL:*</label>
+                  <input class="form-data__input form-data__contacts" type="email" name="email" placeholder="KUKLACHEV@GMAIL.COM" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/">
                 </li>
                 <li class="container-form__item">
-                  <label class="container-form__label form-data">Телефон:*
-                    <input class="form-data__input" type="tel" name="phone" placeholder="8(960)900-60-90" pattern="\8\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}">
-                  </label>
+                  <label class="container-form__label form-data">Телефон:*</label>
+                  <input class="form-data__input form-data__contacts" type="tel" name="phone" placeholder="8(960)900-60-90" pattern="\8\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}">
                 </li>
               </ul>
             <h2 class="container-form__title">Комментарии</h2>
-            <input class="container-form__comment" type="text" name="comment" placeholder="Расскажи обо всех повадках кота">
+            <div class="container-form__item">
+              <input class="container-form__comment" type="text" name="comment" placeholder="Расскажи обо всех повадках кота">
+            </div>
             <h2 class="container-form__title">Дополнительно</h2>
             <ul class="container-form__list checkbox__list">
               <li class="container-form__item">

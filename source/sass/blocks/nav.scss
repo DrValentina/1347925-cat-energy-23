@@ -1,6 +1,11 @@
 .main-nav {
   margin: 0;
   padding: 0;
+  z-index: 2;
+}
+
+.main-nav--form {
+  color: $basic-black;
 }
 
 .main-nav__list {
@@ -123,10 +128,6 @@
   @media (min-width: $tablet-width) {
     font-weight: 400;
   }
-
-  @media (min-width: $desktop-width) {
-    color: $basic-white;
-  }
 }
 
 @media (max-width: $mobile-width-only) {
@@ -135,13 +136,14 @@
   }
 }
 
+.main-nav__item--major {
+  @media (min-width: $desktop-width) {
+    color: $basic-white;
+  }
+}
+
 .main-nav__item--current {
   @media (min-width: $tablet-width) {
     border-bottom: 2px solid $basic-green;
   }
-
-  @media (min-width: $desktop-width) {
-    border-bottom: 2px solid $basic-white;
-  }
-
 }

@@ -1,9 +1,16 @@
 .container-products-gift {
+  margin: 0 20px;
+
+  @media(min-width: $tablet-width) {
+    margin: 0 30px;
+  }
+
   @media (min-width: $desktop-width) {
    display: grid;
-   grid-template-columns: 3fr 1fr;
+   grid-template-columns: 5fr 1fr;
    grid-gap: 79px;
-   margin: 80px 0;
+   margin: 80px 110px;
+   align-items: flex-end;
   }
 }
 
@@ -16,6 +23,7 @@
   font-size: 24px;
   line-height: 24px;
   margin: 25px 0;
+  margin-bottom: 36px;
   padding: 0;
 
   @media (min-width: $tablet-width) {
@@ -34,6 +42,8 @@
 }
 
 .add-product {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
   padding: 13px 1px;
   padding-bottom: 19px;
   border-top: 1px solid $basic-dark-grey;
@@ -47,13 +57,24 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    padding: 25px 0;
+    border-left: none;
+    border-right: none;
   }
 }
 
 .add-product__info {
+
   @media (min-width: $tablet-width) {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
   }
 }
 
@@ -62,6 +83,15 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 13px;
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    width: 120px;
+    margin: 0;
+    margin-right: 160px;
+  }
 }
 
 .add-product__table {
@@ -69,6 +99,44 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.add-product__line {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.add-product__column {
+  text-align: left;
+  width: 120px;
+}
+
+.add-product__column:nth-child(2) {
+  text-align: right;
+  margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+  }
 }
 
 .add-product__button {
@@ -82,12 +150,13 @@
   background-color: $basic-green;
   text-decoration: none;
   color: white;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     padding: 7px 280px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 7px 50px;
+    padding: 7px 100px;
   }
 }
