@@ -99,7 +99,8 @@
   text-align: center;
   text-transform: uppercase;
   border: 1px solid $basic-green;
-  padding: 8px 100px;
+  min-width: 280px;
+  height: 40px;
   background-color: $basic-green;
   text-decoration: none;
   color: white;
@@ -108,12 +109,12 @@
   @media (min-width: $tablet-width) {
     margin: 12px auto;
     margin-bottom: 0;
-    padding: 10px 93px;
+    min-width: 248px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 12px auto;
     margin-bottom: 0;
-    padding: 10px 53px;
+    min-width: 168px;
   }
 }

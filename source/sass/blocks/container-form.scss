@@ -75,7 +75,8 @@
   text-align: center;
   text-transform: uppercase;
   border: 1px solid $basic-green;
-  padding: 8px 74px;
+  min-width: 280px;
+  height: 40px;
   background-color: $basic-green;
   text-decoration: none;
   color: white;
@@ -84,13 +85,13 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    padding: 14px 45px;
+    min-width: 282px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 20px;
-    padding: 13px 188px;
+    min-width: 568px;
   }
 }
 

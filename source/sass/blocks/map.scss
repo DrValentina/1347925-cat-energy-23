@@ -1,9 +1,11 @@
 .map {
   position: relative;
   background-color: $basic-grey;
+  margin: 0;
+  padding: 0;
 }
 
-.map__header {
+.map__legend {
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -23,7 +25,7 @@
   }
 }
 
-.map__header--form {
+.map__legend--form {
   background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
@@ -65,6 +67,9 @@
     line-height: 20px;
     text-align: right;
   }
+    @media (min-width: $desktop-width) {
+      z-index: 4;
+  }
 }
 
 .map__address-street {
@@ -81,6 +86,30 @@
   padding: 0;
 }
 
+.map__real{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  min-height: 362px;
+
+  @media (min-width: $tablet-width) {
+    max-height: 400px;
+    min-height: auto;
+  }
+}
+
+.map__real--responsive{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
 .map__image {
+  position: absolute;
+  top: 0;
+  left: 0;
   margin: 0 auto;
+  z-index: -1;
 }

@@ -146,4 +146,8 @@
   @media (min-width: $tablet-width) {
     border-bottom: 2px solid $basic-green;
   }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid $basic-white;
+  }
 }

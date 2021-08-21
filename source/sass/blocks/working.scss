@@ -1,7 +1,11 @@
 .working {
-  margin: 0 auto;
-}
+  margin: 27px auto;
 
+  @media (min-width: $tablet-width) {
+    margin: 45px auto;
+  }
+}
+/*
 .working__wrapper {
   margin: 0 20px;
 
@@ -13,7 +17,7 @@
     margin: 0 110px;
   }
 }
-
+*/
 .working__title {
   font-family: $oswald;
   font-weight: 400;
@@ -21,6 +25,16 @@
   line-height: 40px;
   margin: 0;
   margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+  }
 }
 
 .working__list {

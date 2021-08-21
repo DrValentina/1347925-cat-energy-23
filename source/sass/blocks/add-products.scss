@@ -1,10 +1,4 @@
 .container-products-gift {
-  margin: 0 20px;
-
-  @media(min-width: $tablet-width) {
-    margin: 0 30px;
-  }
-
   @media (min-width: $desktop-width) {
    display: grid;
    grid-template-columns: 5fr 1fr;
@@ -68,6 +62,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -94,7 +89,9 @@
   }
 }
 
-.add-product__table {
+.add-product__line {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
   font-family: $arial;
   font-weight: 400;
   font-size: 14px;
@@ -103,17 +100,10 @@
   margin-bottom: 15px;
   padding: 0;
 
-  @media (min-width: $desktop-width) {
-    margin: 0;
-  }
-}
-
-.add-product__line {
-  display: grid;
-  grid-template-columns: 1fr 5fr;
-
   @media (min-width: $tablet-width) {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -125,6 +115,10 @@
 .add-product__column {
   text-align: left;
   width: 120px;
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
 }
 
 .add-product__column:nth-child(2) {
@@ -146,17 +140,18 @@
   text-align: center;
   text-transform: uppercase;
   border: 1px solid $basic-green;
-  padding: 8px 100px;
+  min-width: 280px;
+  height: 40px;
   background-color: $basic-green;
   text-decoration: none;
   color: white;
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    padding: 7px 280px;
+    min-width: 632px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 7px 100px;
+    min-width: 244px;
   }
 }

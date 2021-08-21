@@ -23,20 +23,13 @@
     background-repeat: no-repeat;
     background-size: 720px 694px;
     background-position: 100% 0%;
+    margin-bottom: 82px;
   }
 }
 
 .promo__wrapper {
-  margin: 7px 20px;
-  text-align: center;
-
-  @media (min-width: $tablet-width) {
-    margin: 64px 83px;
-    text-align: left;
-  }
-
   @media (min-width: $desktop-width) {
-    margin: 0 110px;
+    margin: 0 auto;
     padding-top: 200px;
     padding-left: 80px;
   }
@@ -81,7 +74,7 @@
 }
 
 .promo__image {
-  text-align: center;
+  margin: 0 auto;
   padding-top: 4px;
 }
 
