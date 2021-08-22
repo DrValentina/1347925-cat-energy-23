@@ -1,20 +1,27 @@
 .page-header {
   display: flex;
   flex-direction: column;
-  margin: 10px 20px;
+  padding: 11px 20px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid $line-grey;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 4fr;
     margin: 24px 30px;
     align-items: center;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    margin: 53px 110px;
+    margin: 0 110px;
   }
+}
+
+.page-header--no-border {
+  border: none;
 }
 
 .page-header__logo {

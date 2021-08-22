@@ -2,8 +2,6 @@
   background: url(../img/jpeg/gift-photo-mobile.jpg);
   background-repeat: no-repeat;
   background-size: 280px 289px;
-  width: 280px;
-  height: 289px;
   background-position: top;
   font-family: $arial;
   font-weight: 400;
@@ -11,23 +9,46 @@
   line-height: 20px;
   color: white;
   text-align: center;
-  padding: 0;
+  padding: 50px 0;
   margin: 35px auto;
 
-  @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content:space-between;
-  }
-
   @media (min-width: $desktop-width) {
-    align-self: center;
+    padding: 20px 60px;
   }
 }
 
 .gift__wrapper {
-  margin: 0 30px;
+  margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin: 0;
+  }
 }
 
 .gift__image {
-  margin-top:  58px;
+  margin: 0;
+  padding: 0;
+}
+
+.gift__description {
+  width: 161px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
 }
