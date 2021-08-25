@@ -67,17 +67,4 @@
     font-size: 20px;
     line-height: 30px;
   }
-
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-  }
-}
-
-.container-form__header {
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 80px;
-  }
 }

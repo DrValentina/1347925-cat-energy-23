@@ -9,7 +9,8 @@
 // Blocks
 
 //Blocks basic
-@import "blocks/header.scss";
+@import "blocks/page-header.scss";
+@import "blocks/picture.scss";
 @import "blocks/nav.scss";
 @import "blocks/map.scss";
 @import "blocks/footer.scss";
@@ -29,7 +30,6 @@
 @import "blocks/form.scss";
 @import "blocks/container-form.scss";
 @import "blocks/checkbox.scss";
-@import "blocks/form-data";
 @import "blocks/radio.scss";
 
 //Catalog page
@@ -37,4 +37,6 @@
 @import "blocks/gift.scss";
 @import "blocks/product.scss";
 @import "blocks/more-products.scss";
+@import "blocks/container-products-gift.scss";
 @import "blocks/add-products.scss";
+@import "blocks/add-product.scss";

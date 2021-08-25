@@ -32,6 +32,7 @@
 }
 
 .programms__block {
+  position: relative;
   background-color: $basic-grey;
   padding: 20px;
   margin: 0;
@@ -40,7 +41,7 @@
     padding: 52px;
   }
 }
-
+/*
 .programms__slim {
   background-image: url(../img/png/cat_back.png);
   background-size: 50px 53px;
@@ -74,7 +75,7 @@
     background-position: 33px 47px;
   }
 }
-
+*/
 .programms__title {
   font-family: $oswald;
   font-weight: 400;
@@ -95,6 +96,15 @@
     padding-left: 162px;
     margin-bottom: 73px;
   }
+}
+
+.programms__icon {
+  position: absolute;
+  top: 20px;
+}
+
+.icon-pro {
+  left: 10px;
 }
 
 .programms__text {

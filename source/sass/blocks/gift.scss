@@ -12,30 +12,42 @@
   padding: 50px 0;
   margin: 35px auto;
 
+  @media (min-width: $tablet-width) {
+    background: url(../img/jpeg/gift-photo-tablet1.jpg);
+    background-repeat: no-repeat;
+    background-size: 708px 200px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding: 20px 60px;
+    background: url(../img/jpeg/gift-photo-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: 245px 289px;
+    width: 245px;
+    height: 289px;
   }
 }
 
 .gift__wrapper {
-  margin: 0 20px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
     display: block;
-    margin: 0;
+    margin: 0 auto;
   }
 }
 
 .gift__image {
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: auto 78px;
+  }
 }
 
 .gift__description {
@@ -45,6 +57,10 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
+    margin: auto 78px;
+    vertical-align: middle;
+    justify-content: flex-end;
+    align-items: center;
     text-align: left;
   }
 
