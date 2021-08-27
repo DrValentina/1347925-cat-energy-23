@@ -87,6 +87,18 @@
   }
 }
 
+.promo__image-product {
+  @media(min-width: $tablet-width) {
+    width: 709px;
+    height: 609px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    height: 499px;
+  }
+}
+
 .promo__button {
   font-weight: 400;
   font-size: 14px;
