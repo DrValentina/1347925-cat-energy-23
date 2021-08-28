@@ -66,6 +66,20 @@
   }
 }
 
+.image-picture__500 {
+  @media (min-width: $tablet-width) {
+    width: 161px;
+    height: 172px;
+  }
+}
+
+.image-picture__1000 {
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    height: 200px;
+  }
+}
+
 .product__info {
   grid-area: table;
   margin: 18px 0;

@@ -1,5 +1,5 @@
 .more-products {
-  padding: 25px 20px;
+  padding: 20px 20px;
   padding-bottom: 45px;
   border-top: 1px solid $line-grey;
   border-bottom: 1px solid $line-grey;
@@ -7,11 +7,18 @@
 
   @media(min-width: $tablet-width) {
     border: 1px solid $line-grey;
-    padding: 38px;
+    padding: 20px;
+    max-width: 276px;
+    margin-top: 97px;
+  }
+
+  @media(min-width: $desktop-width) {
+    max-width: 204px;
+    margin-top: 100px;
   }
 }
 
-.more-product__plus {
+.more-products__plus {
   position: relative;
   width: 30px;
   height: 30px;
@@ -24,8 +31,8 @@
   }
 }
 
-.more-product__plus::before,
-.more-product__plus::after{
+.more-products__plus::before,
+.more-products__plus::after{
   content: '';
   position: absolute;
   top: 10px;
@@ -39,11 +46,11 @@
   }
 }
 
-.more-product__plus::before {
+.more-products__plus::before {
   transform: rotate(90deg);
 }
 
-.more-product__plus::after {
+.more-products__plus::after {
   transform: rotate(180deg);
 }
 
@@ -115,6 +122,6 @@
   }
 
   @media(min-width: $desktop-width) {
-    padding: 10px 39px;
+    padding: 10px 35px;
   }
 }

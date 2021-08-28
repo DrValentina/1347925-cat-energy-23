@@ -16,6 +16,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 4fr;
+    padding-top: 54px;
     margin: 0 110px;
   }
 }
@@ -30,7 +31,7 @@
   align-items: center;
 }
 
-.page-header__logo--logotype {
+.page-header__logo-picture {
   margin-right: 20px;
 
   @media (min-width: $tablet-width) {
@@ -38,7 +39,7 @@
   }
 }
 
-.page-header__logo--name {
+.page-header__logo-name {
   margin: 0 25px;
 
   @media (min-width: $tablet-width) {
