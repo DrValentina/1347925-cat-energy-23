@@ -30,19 +30,3 @@
   justify-content: flex-start;
   align-items: center;
 }
-
-.page-header__logo-picture {
-  margin-right: 20px;
-
-  @media (min-width: $tablet-width) {
-    margin-right: 12px;
-  }
-}
-
-.page-header__logo-name {
-  margin: 0 25px;
-
-  @media (min-width: $tablet-width) {
-    margin: 0;
-  }
-}

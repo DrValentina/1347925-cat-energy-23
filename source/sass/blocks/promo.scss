@@ -109,6 +109,7 @@
   background-color: $basic-green;
   text-decoration: none;
   color: white;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -122,6 +123,16 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
-
   }
+}
+
+.promo__button:hover {
+  background-color: $basic-dark-green;
+  border-color: $basic-dark-green;
+}
+
+.promo__button:active {
+  background-color: $basic-dark-green;
+  border-color: $basic-dark-green;
+  opacity: 30%;
 }

@@ -98,13 +98,49 @@
   }
 }
 
-.programms__icon {
+.programms__icon-slim {
   position: absolute;
   top: 20px;
+  width: 50px;
+  height: 53px;
+
+  @media(min-width: $tablet-width) {
+    width: 200px;
+    height: 211px;
+    right: 62px;
+    top: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 106px;
+    left: 52px;
+    top: 47px;
+  }
 }
 
-.icon-pro {
+.programms__icon-pro {
+  position: absolute;
+  top: 20px;
   left: 10px;
+  width: 67px;
+  height: 50px;
+  top: 20px;
+
+  @media(min-width: $tablet-width) {
+    width: 268px;
+    height: 200px;
+    left: 412px;
+    right: 28px;
+    top: 90px;
+  }
+
+  @media(min-width: $desktop-width) {
+    width: 134px;
+    height: 100px;
+    left: 33px;
+    top: 41px;
+  }
 }
 
 .programms__text {
@@ -143,4 +179,14 @@
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.programms__link:active {
+  opacity: 30%;
+}
+
+.programms__link-arrow {
+  margin-left: 15px;
+  vertical-align: middle;
+
 }
