@@ -1,0 +1,39 @@
+.header-logo__picture {
+  width: 34px;
+  height: 38px;
+
+  @media(min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media(min-width: $desktop-width){
+    width: 202px;
+    height: 59px;
+  }
+}
+
+.header-logo__picture:hover {
+  opacity: 80%;
+}
+
+.header-logo__picture:active {
+  opacity: 60%;
+}
+
+.header-logo__name {
+  margin: 0 25px;
+  cursor: pointer;
+
+  @media(min-width: $tablet-width){
+    display: none;
+  }
+}
+
+.header-logo__name:hover {
+  opacity: 80%;
+}
+
+.header-logo__name:active {
+  opacity: 60%;
+}

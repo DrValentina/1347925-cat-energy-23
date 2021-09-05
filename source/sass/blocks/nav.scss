@@ -130,11 +130,21 @@
   }
 }
 
+.main-nav__link:hover {
+  opacity: 60%;
+}
+
+.main-nav__link:active {
+  opacity: 30%;
+}
+
 @media (max-width: $mobile-width-only) {
   .main-nav--closed .main-nav__item {
     display: none;
   }
 }
+
+
 
 .main-nav__major {
   @media (min-width: $desktop-width) {

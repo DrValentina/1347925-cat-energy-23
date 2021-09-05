@@ -11,18 +11,37 @@
 
 .copyright__link {
   text-decoration: none;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     margin-right: 22px;
   }
-
 }
 
-.copyright__name {
+.copyright__link-name {
   font-family: $arial;
   font-weight: 400;
   font-size: 16px;
   line-height: 18.4px;
   color: $basick-extra-dark-grey;
   text-decoration: none;
+  cursor: pointer;
+}
+
+.copyright__link-name:active {
+  color: $basick-extra-dark-grey;
+}
+
+.copyright__link-logo {
+  fill: $special-dark-grey;
+  cursor: pointer;
+}
+
+.copyright__link-logo:hover {
+  fill: $basic-green;
+}
+
+.copyright__link:active {
+  color: $special-extra-dark-grey;
+  opacity: 30%;
 }

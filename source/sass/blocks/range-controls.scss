@@ -44,13 +44,20 @@
 .range-controls__toggle {
   @media (min-width: $tablet-width) {
     position: absolute;
-    border: 1px solid $basic-white;
+    border: 1px solid $basic-dark-grey;
     width: 34px;
     height: 34px;
     border-radius: 50%;
     background-color: $basic-white;
     box-shadow: (0px 1px 3px $basic-dark-grey);
     left: 47%;
+    cursor: pointer;
+  }
+}
+
+.range-controls__toggle:active {
+  @media (min-width: $tablet-width) {
+    border-color: $basic-green;
   }
 }
 
@@ -96,4 +103,12 @@
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid $basic-dark-grey;
   }
+}
+
+.range-controls__description:hover {
+  border-color: $basic-black;
+}
+
+.range-controls__description:active {
+  border: none;
 }

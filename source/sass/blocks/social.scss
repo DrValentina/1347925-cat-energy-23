@@ -20,3 +20,11 @@
   margin: 16px 160px;
   }
 }
+
+.social__link:hover{
+  mask-image: $basic-green;
+}
+
+.social__link:active {
+  opacity: 30%;
+}
