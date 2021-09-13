@@ -49,16 +49,16 @@
             <div class="container-form__header">
               <ul class="container-form__list">
                 <li class="container-form__item">
-                  <label class="container-form__label form-data">Имя:*</label>
-                  <input class="container-form__input" type="text" name="name-cat" placeholder="Барсик">
+                  <label class="container-form__label form-data" for="name">Имя:*</label>
+                  <input class="container-form__input" id="name" type="text" name="name-cat" placeholder="Барсик">
                 </li>
                 <li class="container-form__item">
-                  <label class="container-form__label form-data">Вес (кг):*</label>
-                  <input class="container-form__input" type="text" name="weight-cat" placeholder="7">
+                  <label class="container-form__label form-data" for="weight">Вес (кг):*</label>
+                  <input class="container-form__input" id="weight" type="text" name="weight-cat" placeholder="7">
                 </li>
                 <li class="container-form__item">
-                  <label class="container-form__label form-data">Возраст (лет):</label>
-                  <input class="container-form__input" type="text" name="age-cat" placeholder="7">
+                  <label class="container-form__label form-data" for="age">Возраст (лет):</label>
+                  <input class="container-form__input" id="age" type="text" name="age-cat" placeholder="7">
                 </li>
               </ul>
               <ul class="container-form__list container-form__list-radio">
@@ -85,12 +85,12 @@
              <h2 class="container-form__title">Контактные данные (владельца кота)</h2>
               <ul class="container-form__list-contacts">
                 <li class="container-form__item">
-                  <label class="container-form__label form-data">E-MAIL:*</label>
-                  <input class="container-form__input container-form__contacts container-form__contacts--email" type="email" name="email" placeholder="KUKLACHEV@GMAIL.COM" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/">
+                  <label class="container-form__label form-data" for="email">E-MAIL:*</label>
+                  <input class="container-form__input container-form__contacts container-form__contacts--email" id="email" type="email" name="email" placeholder="KUKLACHEV@GMAIL.COM" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/">
                 </li>
                 <li class="container-form__item">
-                  <label class="container-form__label form-data">Телефон:*</label>
-                  <input class="container-form__input container-form__contacts container-form__contacts--phone" type="tel" name="phone" placeholder="8(960)900-60-90" pattern="\8\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}">
+                  <label class="container-form__label form-data" for="phone">Телефон:*</label>
+                  <input class="container-form__input container-form__contacts container-form__contacts--phone" id="phone" type="tel" name="phone" placeholder="8(960)900-60-90" pattern="\8\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}">
                 </li>
               </ul>
             <h2 class="container-form__title">Комментарии</h2>

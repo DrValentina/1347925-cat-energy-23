@@ -106,12 +106,17 @@
   @media (min-width: $tablet-width) {
     border: none;
     padding: 0;
-    margin-left: 35px;
   }
 
   @media (min-width: $desktop-width) {
     background-color: transparent;
     padding: 8px 0;
+  }
+}
+
+.main-nav__item:nth-child(2) {
+  @media(min-width: $tablet-width) {
+    margin: 0 35px;
   }
 }
 
@@ -126,6 +131,8 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
     font-weight: 400;
   }
 }
