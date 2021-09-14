@@ -5,11 +5,10 @@
                        "img table table"
                        "img table table"
                        "button button button";
-  font-family: $arial;
+  font-family: $arial, "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  padding: 20px 20px;
   border-top: 1px solid $line-grey;
 
   @media (min-width: $tablet-width) {
@@ -33,7 +32,7 @@
 
 .product__title {
   grid-area: title;
-  font-family: $oswald;
+  font-family: $oswald, "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -91,7 +90,7 @@
 }
 
 .product__column {
-  padding-right: 74px;
+  padding-right: 0;
 
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid $line-grey;
@@ -106,7 +105,7 @@
 
 .product__button {
   grid-area: button;
-  font-family: $oswald;
+  font-family: $oswald, "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;

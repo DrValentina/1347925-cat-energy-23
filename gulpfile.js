@@ -8,7 +8,7 @@ const htmlmin = require("gulp-htmlmin");
 const csso = require("postcss-csso");
 const rename = require("gulp-rename");
 const terser = require("gulp-terser");
-const squoosh = require("gulp-libsquoosh");
+const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
@@ -60,18 +60,34 @@ const html = () => {
 
 exports.html = html;
 
+// Scripts
+
+const scripts = () => {
+  return gulp.src("source/js/script.js")
+    .pipe(terser())
+    .pipe(rename("script.min.js"))
+    .pipe(gulp.dest("build/js"))
+    .pipe(sync.stream());
+}
+
+exports.scripts = scripts;
+
 //Images
 
 const optimizeImages = () => {
-  return gulp.src("source/img/**/*{png,svg,jpg}")
-  .pipe(squoosh())
+  return gulp.src("source/img/**/*.{png,svg,jpg}")
+  .pipe(imagemin([
+    imagemin.mozjpeg({progressive:true}),
+    imagemin.optipng({optimizationLevel:3}),
+    imagemin.svgo()
+  ]))
   .pipe(gulp.dest("build/img"))
 }
 
 exports.images = optimizeImages;
 
 const copyImages = () => {
-  return gulp.src("source/img/**/*{png,svg,jpg}")
+  return gulp.src("source/img/**/*.{png,svg,jpg}")
   .pipe(gulp.dest("build/img"))
 }
 
@@ -164,6 +180,7 @@ const build = gulp.series (
     styles,
     stylesMin,
     html,
+    scripts,
     sprite,
     createWebp
   ),
@@ -181,6 +198,7 @@ exports.default = gulp.series(
     styles,
     stylesMin,
     html,
+    scripts,
     createWebp,
     sprite
   ),

@@ -55,7 +55,7 @@
 }
 
 .more-products__title {
-  font-family: $oswald;
+  font-family: $oswald, "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -80,7 +80,7 @@
 
 .more-products__description {
   grid-area: text;
-  font-family: $arial;
+  font-family: $arial, "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -104,7 +104,7 @@
 }
 
 .more-products__link {
-  font-family: $oswald;
+  font-family: $oswald, "Tahoma", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;

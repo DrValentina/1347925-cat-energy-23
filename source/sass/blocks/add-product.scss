@@ -55,7 +55,7 @@
 .add-product__line {
   display: grid;
   grid-template-columns: 1fr 5fr;
-  font-family: $arial;
+  font-family: $arial, "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;

@@ -114,16 +114,16 @@
   }
 }
 
-.main-nav__item:nth-child(2) {
+.main-nav__item:not(:first-child) {
   @media(min-width: $tablet-width) {
-    margin: 0 35px;
+    margin-left: 35px;
   }
 }
 
 .main-nav__link {
   text-decoration: none;
   color: $basic-black;
-  font-family: $oswald;
+  font-family: $oswald, "Tahoma", sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 20px;
@@ -167,4 +167,17 @@
   @media (min-width: $desktop-width) {
     border-bottom: 2px solid $basic-white;
   }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__list {
+  position: static;
+  min-height: 0;
+}
+
+.main-nav--nojs .main-nav__item {
+  display: block;
 }
