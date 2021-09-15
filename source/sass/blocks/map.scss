@@ -39,7 +39,7 @@
 }
 
 .map__description {
-  font-family: $oswald;
+  font-family: $oswald, "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -55,7 +55,7 @@
 .map__address {
   display: flex;
   flex-direction: column;
-  font-family: $arial;
+  font-family: $arial, "Tahoma", sans-serif ;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;

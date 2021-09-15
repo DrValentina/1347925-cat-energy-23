@@ -28,7 +28,7 @@
 }
 */
 .example__title {
-  font-family: $oswald;
+  font-family: $oswald, "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
@@ -49,7 +49,7 @@
 }
 
 .example__description {
-  font-family: $arial;
+  font-family: $arial, "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -74,7 +74,7 @@
   top: 45%;
   left: 30%;
   display: flex;
-  font-family: $oswald;
+  font-family: $oswald, "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -130,7 +130,7 @@
 }
 
 .example-item__block {
-  font-family: $oswald;
+  font-family: $oswald, "Tahoma", sans-serif;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
@@ -160,7 +160,7 @@
   top: 60%;
   left: 18%;
   z-index: 2;
-  font-family: $arial;
+  font-family: $arial, "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
