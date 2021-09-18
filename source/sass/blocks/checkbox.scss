@@ -1,11 +1,13 @@
 .checkbox {
   margin-left: 50px;
+  margin-top: 15px;
 }
 
 .checkbox__label {
   position: relative;
   color: $basic-black;
   margin: 0;
+  margin-left: 20px;
 }
 
 .checkbox__input {
@@ -19,22 +21,31 @@
   }
 }
 
-.checkbox__input + .checkbox__label::before{
+.checkbox__input:disabled + .checkbox__label {
+  color: $form-disabled;
+}
+
+.checkbox__input + .checkbox__label::before {
   content: "";
   position: absolute;
   border: 1px solid $basic-dark-grey;
   width: 30px;
   height: 30px;
   left: -50px;
+  top: -2px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;
     left: -70px;
   }
 }
 
-.checkbox__input:checked + .checkbox__label::before{
+.checkbox__input:disabled + .checkbox__label::before {
+  opacity: 0.3;
+}
+
+.checkbox__input:checked + .checkbox__label::before {
   content: "";
   position: absolute;
   background-image: url("../img/svg/checkbox_checked.svg");
@@ -43,7 +54,7 @@
   width: 30px;
   height: 30px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     background-size: 40px 40px;
     width: 40px;
     height: 40px;

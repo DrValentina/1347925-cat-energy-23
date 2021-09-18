@@ -1,6 +1,6 @@
 .promo {
   position: relative;
-  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/jpeg/index-background-mobile.jpg);
+  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/jpeg/index-background-mobile.jpg");
   background-repeat: no-repeat;
   background-size: 320px 302px;
   background-position: top;
@@ -19,7 +19,7 @@
   @media (min-width: $desktop-width) {
     margin-top: -150px;
     z-index: -1;
-    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/jpeg/index-background-desktop.jpg);
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/jpeg/index-background-desktop.jpg");
     background-repeat: no-repeat;
     background-size: 720px 694px;
     background-position: 100% 0%;
@@ -28,8 +28,22 @@
   }
 }
 
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+  .promo {
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/jpeg/index-background-mobile@2x.jpg");
+
+    @media (min-width: $desktop-width) {
+      background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/jpeg/index-background-desktop@2x.jpg");
+    }
+  }
+}
+
 .promo__wrapper {
   position: relative;
+
   @media (min-width: $desktop-width) {
     margin: 0 auto;
     padding-top: 200px;
@@ -41,19 +55,16 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  padding-top: 27px;
   text-align: center;
   margin: 0;
   padding: 0;
+  padding-top: 27px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     text-align: left;
     margin-bottom: 41px;
-  }
-
-  @media (min-width: $desktop-width) {
   }
 }
 
@@ -88,7 +99,7 @@
 }
 
 .promo__image-product {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 709px;
     height: 609px;
   }
@@ -108,7 +119,7 @@
   padding: 8px 72px;
   background-color: $basic-green;
   text-decoration: none;
-  color: white;
+  color: $basic-white;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
@@ -123,6 +134,7 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
+    z-index: 5;
   }
 }
 

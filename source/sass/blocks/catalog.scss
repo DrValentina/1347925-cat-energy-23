@@ -1,22 +1,10 @@
-/*
-.catalog__wrapper {
-  margin: 0;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 30px;
-  }
-
-    @media (min-width: $desktop-width) {
-      margin: 0 110px;
-    }
-}
-*/
 .catalog__title {
+  position: relative;
   font-family: $oswald, "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  margin: 27px 20px;
+  margin: 27px auto;
   margin-bottom: 41px;
 
   @media (min-width: $tablet-width) {
@@ -25,7 +13,7 @@
     margin-bottom: 82px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 82px;
   }
 }

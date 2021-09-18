@@ -55,7 +55,7 @@
 .map__address {
   display: flex;
   flex-direction: column;
-  font-family: $arial, "Tahoma", sans-serif ;
+  font-family: $arial, "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -68,8 +68,9 @@
     line-height: 20px;
     text-align: right;
   }
-    @media (min-width: $desktop-width) {
-      z-index: 4;
+
+  @media (min-width: $desktop-width) {
+    z-index: 4;
   }
 }
 
@@ -87,10 +88,10 @@
   padding: 0;
 }
 
-.map__real{
-  overflow:hidden;
-  padding-bottom:56.25%;
-  position:relative;
+.map__real {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
   min-height: 362px;
 
   @media (min-width: $tablet-width) {
@@ -99,12 +100,12 @@
   }
 }
 
-.map__real-responsive{
-  left:0;
-  top:0;
-  height:100%;
-  width:100%;
-  position:absolute;
+.map__real-responsive {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 .map__image {

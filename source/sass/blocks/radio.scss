@@ -1,8 +1,9 @@
 .radio {
   margin-left: 50px;
+  margin-top: 10px;
 
-  @media(min-width:$tablet-width) {
-    margin-bottom:0;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -13,34 +14,45 @@
 
 .radio__label {
   position: relative;
-  margin: auto 0;
+  margin: 0;
 }
 
-.radio__input + .radio__label::before{
+.radio__input:disabled + .radio__label {
+  color: $form-disabled;
+}
+
+.radio__input + .radio__label::before {
   content: "";
   position: absolute;
   background-image: url("../img/svg/radiobutton.svg");
   background-repeat: no-repeat;
+  background-position: center;
   width: 30px;
   height: 30px;
   left: -50px;
+  top: -2px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;
   }
 }
 
-.radio__input:checked + .radio__label::before{
+.radio__input:disabled + .radio__label::before {
+  opacity: 0.3;
+}
+
+.radio__input:checked + .radio__label::before {
   content: "";
   position: absolute;
   background-image: url("../img/svg/radiobutton_checked.svg");
   background-repeat: no-repeat;
   background-size: 30px 30px;
+  background-position: center;
   width: 30px;
   height: 30px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;
   }

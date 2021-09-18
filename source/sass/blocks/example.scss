@@ -14,19 +14,7 @@
     height: 570px;
   }
 }
-/*
-.example__wrapper {
-  margin: 0 20px;
 
-  @media (min-width: $tablet-width) {
-    margin: 0 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0 110px;
-  }
-}
-*/
 .example__title {
   font-family: $oswald, "Tahoma", sans-serif;
   font-weight: 400;
@@ -70,33 +58,34 @@
 }
 
 .example__legend {
-  position: absolute;
-  top: 45%;
-  left: 30%;
   display: flex;
+  justify-content: center;
   font-family: $oswald, "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  margin-top: 40px;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
     flex-direction: column;
     font-size: 20px;
     line-height: 20px;
-    top: 38%;
-    left: 72%;
     text-align: right;
+    right: 0;
+    top: 26%;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
     flex-direction: row;
     justify-content: flex-start;
-    left: 110px;
-    top: 80%;
+    margin: 55px 0;
   }
 }
 
@@ -106,10 +95,6 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 10px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: 45px;
   }
 }
 
@@ -195,17 +180,23 @@
   }
 }
 
-.example__image {
+.example__image-cat {
   margin: 0;
-  margin-top: 90px;
+  margin-top: 44px;
   margin-bottom: 13px;
   padding: 0;
   text-align: center;
 
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    height: 620px;
+  }
+
   @media (min-width: $desktop-width) {
     position: absolute;
-    z-index: 2;
-    bottom: 30%;
-    left: 80%
+    width: 690px;
+    height: 656px;
+    bottom: -90px;
+    right: -70px;
   }
 }

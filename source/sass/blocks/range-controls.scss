@@ -10,6 +10,7 @@
   text-align: center;
   margin: 0 20px;
   padding: 0;
+  z-index: 2;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -19,9 +20,8 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 80%;
+    bottom: -20px;
     left: 53%;
-
   }
 }
 
@@ -31,7 +31,7 @@
   height: 14px;
   border-radius: 10px;
   background-color: $basic-white;
-  margin: 0;
+  margin: 0 20px;
   padding: 0;
 
   @media (min-width: $tablet-width) {
@@ -63,7 +63,7 @@
 
 .range-controls__toggle::after {
   @media (min-width: $tablet-width) {
-    content: '';
+    content: "";
     position: absolute;
     top: 35%;
     left: 35%;
@@ -73,6 +73,10 @@
     border-radius: 50%;
     background-color: $basic-green;
   }
+}
+
+.range-controls__toggle:focus {
+  outline: 1px solid $basic-black;
 }
 
 .range-controls__bar {
@@ -95,7 +99,7 @@
 
 .range-controls__description {
   text-transform: uppercase;
-  margin: 0 20px;
+  margin: 0;
   border: none;
   cursor: pointer;
   background-color: transparent;

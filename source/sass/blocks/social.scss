@@ -12,16 +12,16 @@
     justify-content: space-around;
     align-items: center;
     border: none;
-    margin: 16px 50px;;
+    margin: 16px 50px;
     padding: 0;
   }
 
   @media (min-width: $desktop-width) {
-  margin: 16px 160px;
+    margin: 16px 160px;
   }
 }
 
-.social__link:hover{
+.social__link:hover {
   mask-image: $basic-green;
 }
 

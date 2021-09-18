@@ -7,7 +7,7 @@
                        "button button button";
   font-family: $arial, "Tahoma", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 16px;
   border-top: 1px solid $line-grey;
 
@@ -25,13 +25,15 @@
     background-image: linear-gradient(to top, $basic-grey 80%, $basic-white 20%);
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 39px;
+    max-width: 180px;
   }
 }
 
 .product__title {
   grid-area: title;
+  position: relative;
   font-family: $oswald, "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -40,6 +42,7 @@
   color: $special-extra-dark-grey;
   width: 76px;
   margin: 0;
+  margin-top: 11px;
   padding: 0;
 
   @media (min-width: $tablet-width) {
@@ -65,14 +68,14 @@
   }
 }
 
-.image-picture__500 {
+.product__image-feed--mini {
   @media (min-width: $tablet-width) {
     width: 161px;
     height: 172px;
   }
 }
 
-.image-picture__1000 {
+.product__image-feed--normal {
   @media (min-width: $tablet-width) {
     width: 168px;
     height: 200px;
@@ -84,7 +87,7 @@
   margin: 18px 0;
   text-align: left;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin: 21px 0;
   }
 }
@@ -112,22 +115,20 @@
   text-align: center;
   text-transform: uppercase;
   border: 1px solid $basic-green;
-  min-width: 280px;
-  height: 40px;
   background-color: $basic-green;
   text-decoration: none;
-  color: white;
-  margin-bottom: 5px;
+  color: $basic-white;
+  padding: 10px 93px;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    margin: 12px auto;
-    margin-bottom: 0;
-    min-width: 248px;
+    margin: auto;
+    max-width: 248px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 12px auto;
-    margin-bottom: 0;
-    min-width: 168px;
+    margin: auto;
+    max-width: 168px;
+    padding: 10px 53px;
   }
 }

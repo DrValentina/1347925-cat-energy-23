@@ -1,7 +1,7 @@
 .page-header {
   display: flex;
   flex-direction: column;
-  padding: 11px 20px;
+  padding: 11px auto;
   padding-bottom: 18px;
   border-bottom: 1px solid $line-grey;
 
@@ -29,4 +29,5 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin: 11px 20px;
 }

@@ -10,19 +10,7 @@
     margin-bottom: 71px;
   }
 }
-/*
-.form__wrapper {
-  margin: 0 20px;
 
-  @media (min-width: $tablet-width) {
-    margin: 0 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0 110px;
-  }
-}
-*/
 .form__title {
   font-weight: 400;
   font-size: 36px;
@@ -63,7 +51,7 @@
   font-size: 16px;
   line-height: 18px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
   }
